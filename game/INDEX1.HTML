@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacky Snake</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("indexsatu.jpg"); 
+      background-size: cover; 
+      background-position: center; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    #welcome-container {
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color:antiquewhite;
+      font-size: 35px;
+      opacity: 0; /* Set opacity 0 untuk menyembunyikan teks awalnya */
+      animation: fadeIn 5s ease-in-out forwards; /* Animasi pudar selama 2 detik */
+    }
+    h5 {
+        color:dimgray;
+    }
+
+    #start-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color:black;
+      background-color:khaki;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #start-btn:hover {
+      background-color: #495057;
+      color:black
+    }
+
+    @media (max-width: 600px) {
+      #start-btn {
+        font-size: 14px;
+      }
+    }
+
+    /* Animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    #start-btn.animated {
+      animation: bounce 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome-container">
+    <h1>WELCOME TO SNACKY SNAKE</h1>
+    <h5>developed by @naylaalphabria</h5>
+    
+    <form action="main.html"> <button type="submit" id="start-btn" class="animated">START</button> </form>
+  
+  </div>
+
+</body>
+</html>
+</body>
+</html>

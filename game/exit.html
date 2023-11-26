@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacky Snake</title>
+</head>
+<body>
+    
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      background-image: url("exitbener.jpg"); 
+      background-size: cover; 
+      background-position: center; 
+      justify-content: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    #welcome-container {
+      text-align: center;
+    }
+  
+    h1 {
+      color:#fff;
+      font-size: 50px;
+      animation: blinkColorChange 2s infinite; 
+
+    }
+    @keyframes blinkColorChange {
+      0%, 50%, 100% {
+        color:#fff
+      }
+      25%, 75% {
+        color:burlywood; /* Ganti dengan warna lain sesuai kebutuhan */
+      }
+    }
+
+    #start-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      border: 2px solid #343a40;
+      color: #fff;
+      background-color: #343a40;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #start-btn:hover {
+      background-color:khaki;
+      color:black;
+    }
+
+    @media (max-width: 600px) {
+      #start-btn {
+        font-size: 14px;
+      }
+    }
+
+    /* Animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    #start-btn.animated {
+      animation: bounce 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome-container">
+    <h1>THANKS FOR PLAYING</h1>
+    <form action="INDEX1.HTML"> <button type="submit" id="start-btn" class="animated">START AGAIN</button> </form>
+  
+  </div>
+
+</body>
+</html>
+</body>
+</html>
